@@ -31,8 +31,6 @@ export default{
       { img: "SZF6.png", title: "Sumsung Galaxy", subtitle: "Z Fold 6", price: "Rs: $1900",bpm:1 },
       { img: "s24.png", title: "Sumsung ", subtitle: "Galaxy s23 Ultra", price: "Rs: $1000", bpm:1 },
       { img: "SBF.png", title: "Sumsung", subtitle: " Blue Flip", price: "Rs: $40",bpm:1 },
-      { img: "pp3.png", title: "Oreo Biscuit", subtitle: "270GM", price: "Rs: $20",bpm:1 },
-      { img: "pp3.png", title: "sweat Papaya", subtitle: "1kg-10Kg", price: "Rs: $10",bpm:1},
     ],
   }),
   methods: {
