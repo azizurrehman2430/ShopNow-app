@@ -146,6 +146,7 @@ export default {
   }
 
   .text-container {
+    margin-top:20px;
     max-width: 90%;
     height: auto;
     align-items: center;
