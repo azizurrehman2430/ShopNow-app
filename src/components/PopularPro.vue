@@ -103,4 +103,11 @@ export default {
   margin-top: 10px;
   font-size: large; 
 }
+/* Responsive Styling */
+@media (max-width: 600px)
+{
+  .title {
+    margin-top: 2rem;
+  }
+}
 </style>

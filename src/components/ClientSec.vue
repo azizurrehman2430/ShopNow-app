@@ -146,7 +146,7 @@ export default {
   }
 
   .text-container {
-    margin-top:20px;
+    
     max-width: 90%;
     height: auto;
     align-items: center;
@@ -154,6 +154,7 @@ export default {
   }
 
   .image-text {
+    margin-top: 6rem;
     margin-right: 5rem;
     font-size: 14px;
   }

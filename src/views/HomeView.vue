@@ -34,7 +34,7 @@
               </v-carousel-item>
             </v-carousel> -->
           </v-col>
-          <v-toolbar color="transparent" class="PopularProduct">
+          <v-toolbar color="transparent" >
             <v-toolbar-title><h3>Popular Mobiles Top Campanies </h3></v-toolbar-title>
 
             <!-- <v-spacer></v-spacer>
@@ -221,5 +221,12 @@ export default {
 }
 .top-day {
   margin-top: 120px;
+}
+/* Responsive Styling */
+@media (max-width: 600px)
+{
+/* h3{
+    margin-top: 200px;
+  } */
 }
 </style>
