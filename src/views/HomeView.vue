@@ -5,7 +5,12 @@
       <v-container>
         <v-row>
           <v-col cols="12" sm="12">
-            <v-carousel>
+            <ClientSec/>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" sm="12">
+            <!-- <v-carousel>
               <v-carousel-item
                 v-for="(item, i) in items"
                 :key="i"
@@ -27,9 +32,9 @@
                   </v-col>
                 </v-row>
               </v-carousel-item>
-            </v-carousel>
+            </v-carousel> -->
           </v-col>
-          <v-toolbar color="transparent">
+          <v-toolbar color="transparent" class="PopularProduct">
             <v-toolbar-title><h3>Popular Mobiles Top Campanies </h3></v-toolbar-title>
 
             <!-- <v-spacer></v-spacer>
@@ -49,7 +54,13 @@
           <v-col cols="12" sm="12" class="mt-10">
             <FeaturePro/>
           </v-col>
+          <v-toolbar color="transparent" class="mt-10">
+            <v-toolbar-title><h3>Top Three Apple Mobiles</h3></v-toolbar-title>
+          </v-toolbar>
           <v-col cols="12" sm="12" class="mt-10">
+            <AppleMobile/>
+          </v-col>
+          <v-col cols="12" sm="12" class="app mt-10" >
             <ClientSec />
           </v-col>
 
@@ -157,43 +168,50 @@ import FooterSection from "@/components/FooterSection.vue";
 import PopularPro from "@/components/PopularPro.vue";
 import FeaturePro from "@/components/FeaturePro.vue";
 import ClientSec from "@/components/ClientSec.vue";
+import AppleMobile from "@/components/AppleMobile.vue";
 </script>
 <script>
 export default {
   data() {
     return {
-      items: [
-        {
-          src: "2.jpg",
-          title: "Surface Studio",
-          text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
-        },
-        {
-          src: "3.jpg",
-          title: "Surface Studio",
-          text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
-        },
-        {
-          src: "1.jpg",
-          title: "Surface Studio",
-          text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
-        },
-        {
-          src: "7.jpg",
-          title: "Surface Studio",
-          text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
-        },
-        {
-          src: "5.jpg",
-          title: "Surface Studio",
-          text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
-        },
-      ],
+      // items: [
+      //   {
+      //     src: "2.jpg",
+      //     title: "Surface Studio",
+      //     text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
+      //   },
+      //   {
+      //     src: "3.jpg",
+      //     title: "Surface Studio",
+      //     text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
+      //   },
+      //   {
+      //     src: "1.jpg",
+      //     title: "Surface Studio",
+      //     text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
+      //   },
+      //   {
+      //     src: "7.jpg",
+      //     title: "Surface Studio",
+      //     text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
+      //   },
+      //   {
+      //     src: "5.jpg",
+      //     title: "Surface Studio",
+      //     text: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès ",
+      //   },
+      // ],
     };
   },
 };
 </script>
 <style scoped>
+/* .app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+} */
 .top {
   margin-top: 100px;
 }

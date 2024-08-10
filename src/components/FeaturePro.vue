@@ -1,13 +1,13 @@
 <template>
   <v-row justify="center" class="space px-16">
     <v-col cols="12" xs="12" sm="6" md="4" v-for="(feature, i) in features" :key="i">
-      <v-card class="mx-auto rounded-xl" max-width="300" color="" flat outlined style="border: 2px solid green;">
+      <v-card class="mx-auto rounded-xl"  max-width="300" :elevation="5" color="" flat outlined style="border: 1px solid black;">
         <div align="center" justify="center">
           <v-img class="img mt-4" max-height="300" max-width="300" contain :src="feature.img"></v-img>
         </div>
 
         <v-card-title class="title">{{ feature.title }}</v-card-title>
-        <v-card-title class="grey--text text-grey-darken-1 caption mt-n6" id="subtitle">{{feature.subtitle}}</v-card-title>
+        <v-card-title class="grey--text text-grey-darken-1 caption mt-n2" id="subtitle">{{feature.subtitle}}</v-card-title>
         <v-card-title class="mt-n4" id="price">{{ feature.price }}</v-card-title>
 
         <v-card-actions class="mx-16 mt-1" style="justify-content: center;">
