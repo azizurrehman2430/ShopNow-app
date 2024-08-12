@@ -69,16 +69,21 @@
       </v-app-bar>
      </v-main>
       <router-view />
+      <FooterSection/>
     </v-app>
   </template>
   
   <script>
+  import FooterSection from '@/components/FooterSection.vue';
   export default {
-    name: "HeaderView",
+    name: "HomeView",
     data() {
       return {
         currentUser: null,
       };
+    },
+    components:{
+        FooterSection
     },
     mounted() {
       this.getCurrentUser();

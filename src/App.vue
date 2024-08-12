@@ -3,7 +3,7 @@
     <v-main>
       <div>
       <div class="header-view" v-show="isDesktop">
-      <NavBar/>
+      <AllView/>
     </div>
     <div class="mobile-view" v-show="!isDesktop">
       <MobileView />
@@ -19,13 +19,13 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
 import MobileView from './views/MobileView.vue';
+import AllView from '@/views/AllView.vue';
 export default{
   name: 'App',
   components:{
-    NavBar,
-    MobileView
+    MobileView,
+    AllView,
   },
   // beforeMount() {
   //   this.fetchData();

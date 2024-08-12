@@ -1,7 +1,9 @@
 <template>
  <v-app>
   <v-main>
-    <PopularPro/>
+    <v-col cols="12" sm="12">
+      <PopularPro/>
+    </v-col>
   </v-main>
  </v-app>
 </template>
