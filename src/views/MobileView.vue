@@ -42,7 +42,7 @@
       drawer: false,
       links: [
         { name: "HomeView", route: "/", icon: "mdi-home" },
-        { name: "About", route: "/about", icon: "mdi-information" },
+        { name: "Products", route: "/product", icon: "mdi-information" },
         { name: "Services", route: "/services", icon: "mdi-newspaper-variant" },
         { name: "Users", route: "/users", icon: "mdi-note-edit" },
         { name: "Contact Us ", route: "/contact-us", icon: "mdi-chevron-right" },
