@@ -6,12 +6,8 @@
                     <div class="text-center">
                         <b><span>Shop</span><span>Now</span></b>
                     </div>
-                    <v-card-text class="mt-4">
-                        <div class="text-center" style="background-color:#f4f5f9">
-                            Shop the latest computers, laptops, headphones, and branded mobile phones at our e-commerce
-                            store. Enjoy great prices and fast delivery!
-                        </div>
-                    </v-card-text>
+                    
+
                 </v-col>
                 <v-col cols="12" xs="12" sm="6" md="2">
                     <v-card-text class="white--text pt-0">

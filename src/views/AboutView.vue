@@ -1,5 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+ <v-app>
+  <v-main>
+    <PopularPro/>
+  </v-main>
+ </v-app>
 </template>
+<script>
+import PopularPro from '@/components/PopularPro.vue'
+export default{
+  name:"PopularPro",
+  components:{
+    PopularPro
+  }
+}
+</script>

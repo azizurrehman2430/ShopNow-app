@@ -3,7 +3,7 @@
       <v-col cols="12" xs="12" sm="6" md="4" v-for="(Image, i) in Images" :key="i">
         <v-card class="mx-auto rounded-xl" max-width="300" :elevation="5" color="" flat outlined style="border: 1px solid black;">
           <div align="center" justify="center">
-            <v-img class="img mt-4" max-height="300" max-width="300" contain :src="Image.img"></v-img>
+            <v-img class="img mt-0" max-height="300" max-width="300" contain :src="Image.img"></v-img>
           </div>
   
           <v-card-title class="title">{{ Image.title }}</v-card-title>
@@ -28,9 +28,9 @@
       data: () => ({
       bpm: 1,
       Images: [
-        { img: "i14.png", title: "IPhone", subtitle: "Iphone 14", price: "Rs: $1340",bpm:1 },
-        { img: "s24.png", title: "Sumsung ", subtitle: "Galaxy s23 Ultra", price: "Rs: $1000", bpm:1 },
-        { img: "SBF.png", title: "Sumsung", subtitle: " Blue Flip", price: "Rs: $40",bpm:1 },
+        { img: "i14.png", title: "Apple", subtitle: "Iphone 14", price: "Rs: $1340",bpm:1 },
+        { img: "i13.png", title: "Apple ", subtitle: "13 Pro Max", price: "Rs: $1200", bpm:1 },
+        { img: "i12.png", title: "Apple", subtitle: " Iphone 12", price: "Rs: $980",bpm:1 },
       ],
     }),
     methods: {
@@ -53,30 +53,30 @@
     height: 80vh;
   }
   .title {
-    margin-top: 23px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 0px;
     font-size: x-large;
-    color: green;
+    color:black;
     font-weight: 900;
     text-align: center;
   }
   
   #subtitle {
     font-size: large;
-    color: green;
+    color: black;
     font-weight: 900;
     text-align: center;
   }
   
   #price {
     font-size: large;
-    color: green;
+    color: black;
     font-weight: 900;
     text-align: center;
   }
   
   .green-border {
-    border: 2px solid green;
+    border: 2px solid black;
   }
   
   .small-btn {
