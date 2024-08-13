@@ -6,7 +6,7 @@
         <v-spacer></v-spacer>
         <div class="navbar">
           <v-btn to="/">Home</v-btn> |
-          <v-btn to="/product">Products</v-btn> |
+          <v-btn to="/products">Products</v-btn> |
           <v-btn to="/services">Services</v-btn> |
           <v-btn to="/contact-us">Contact US</v-btn> |
           <v-btn to="/users">Users</v-btn> |

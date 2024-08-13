@@ -1,12 +1,11 @@
 <template>
     <v-app>
-     <v-main>
       <v-app-bar color="primary">
         <h4>Shop<span style="color:orange">Now</span></h4>
         <v-spacer></v-spacer>
         <div class="navbar">
           <v-btn to="/">Home</v-btn> |
-          <v-btn to="/product">Products</v-btn> |
+          <v-btn to="/about">Products</v-btn> |
           <v-btn to="/services">Services</v-btn> |
           <v-btn to="/contact-us">Contact US</v-btn> |
           <v-btn to="/users">Users</v-btn> |
@@ -67,8 +66,8 @@
           </v-menu> -->
         </div>
       </v-app-bar>
-     </v-main>
       <router-view />
+    
       <FooterSection/>
     </v-app>
   </template>

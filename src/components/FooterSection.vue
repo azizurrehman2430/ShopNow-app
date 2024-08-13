@@ -4,43 +4,28 @@
       <v-row>
         <v-col cols="12" xs="12" sm="6" md="4" class="pa-16">
           <v-toolbar color="transparent" flat>
-            <v-badge color="#D5F0DB" dot>
-              <v-img src="1.png" contain width="30"></v-img>
-            </v-badge>
+            <!-- <v-badge color="#D5F0DB" dot>
+              <v-img src="1.png" contain width="30"></v-img> 
+            </v-badge> -->
 
-            <v-toolbar-title class="ml-4">
+            <v-toolbar-title class="ml-2">
               <strong class="heading">Shop<span style="color: orange">Now</span></strong>
             </v-toolbar-title>
           </v-toolbar>
-          <!-- <v-card-text class="pt-0">
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-1 white--text"
-              icon
-              fab
-              outlined
-              small
-            >
-              <v-icon size="20px">
-                {{ icon }}
-              </v-icon>
-            </v-btn>
-          </v-card-text> -->
-          <div class="icon">
+          <div class="icon ml-16">
           <v-btn icon href="https://www.facebook.com/profile.php?id=100074228396400&mibextid=ZbWKwL" target="blank"
             class="mt-6 mr-2 face">
-            <v-icon size="30" color="blue-darken-2">mdi-facebook</v-icon>
+            <v-icon size="20" color="blue-darken-2">mdi-facebook</v-icon>
           </v-btn>
           <v-btn icon href="https://github.com/azizurrehman2430" target="blank" class="mt-6 mr-2">
-            <v-icon size="30" center>mdi-github</v-icon>
+            <v-icon size="20" center>mdi-github</v-icon>
           </v-btn>
           <v-btn icon href="https://www.linkedin.com/in/aziz-ur-rehman-637008247/" target="blank" class="mt-6 mr-2">
-            <v-icon size="30" color="blue">mdi-linkedin</v-icon>
+            <v-icon size="20" color="blue">mdi-linkedin</v-icon>
           </v-btn>
           <v-btn icon href="https://www.instagram.com/rai_aziz24?utm_source=qr&igsh=MW02YzVoc2JpbnExaQ==" target="_blank"
             class="mt-6 mr-2">
-            <v-icon size="30" color="red">mdi-instagram</v-icon>
+            <v-icon size="20" color="red">mdi-instagram</v-icon>
           </v-btn>
         </div>
         </v-col>
@@ -89,6 +74,9 @@ export default {
 <style>
 .footer{
   background-color: rgb(39, 38, 38);
+}
+.icon{
+  display: flex;
 }
 .heading{
   color: white;

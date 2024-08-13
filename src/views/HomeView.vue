@@ -5,7 +5,7 @@
         <!-- <v-img src="H1.png" style=" width: 120%; height: 100%;"></v-img> -->
         <v-row>
           <v-col>
-            <ClientSec/>
+            <HomeCont/>
           </v-col>
         </v-row>
         <v-row>
@@ -73,6 +73,7 @@
 <script setup>
 // import NavBar from "@/components/NavBar.vue";
 // import FooterSection from "@/components/FooterSection.vue";
+import HomeCont from "@/components/HomeCont.vue";
 import PopularPro from "@/components/PopularPro.vue";
 import FeaturePro from "@/components/FeaturePro.vue";
 import ClientSec from "@/components/ClientSec.vue";
