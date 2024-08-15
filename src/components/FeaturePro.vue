@@ -1,16 +1,17 @@
 <template>
   <v-row justify="center" class="space px-16">
-    <v-col cols="12" xs="12" sm="6" md="4" v-for="(feature, i) in features" :key="i">
+    <v-col cols="12" xs="12" sm="6" md="3" v-for="(feature, i) in features" :key="i">
       <v-card class="mx-auto rounded-xl"  max-width="300" :elevation="5" color="" flat outlined style="border: 1px solid black;">
         <div align="center" justify="center">
-          <v-img class="img mt-4" max-height="300" max-width="300" contain :src="feature.img"></v-img>
+          <v-img class="img mt-4" max-height="300" max-width="300" style="height:100px; " contain :src="feature.img"></v-img>
         </div>
 
         <v-card-title class="title">{{ feature.title }}</v-card-title>
         <v-card-title class="grey--text text-grey-darken-1 caption mt-n2" id="subtitle">{{feature.subtitle}}</v-card-title>
         <v-card-title class="mt-n4" id="price">{{ feature.price }}</v-card-title>
+        <v-btn class="mb-2" style="background-color: orange; border-radius: 15px;">BuyNow</v-btn>
 
-        <v-card-actions class="mx-16 mt-1" style="justify-content: center;">
+        <!-- <v-card-actions class="mx-16 mt-1" style="justify-content: center;">
           <v-btn outlined class="mt-n2 add small-btn bordered-btn" @click="decrement(feature)">
             <v-icon color="green">mdi-minus</v-icon>
           </v-btn>
@@ -18,7 +19,7 @@
           <v-btn outlined class="mt-n2 add small-btn bordered-btn" @click="increment(feature)">
             <v-icon color="green">mdi-plus</v-icon>
           </v-btn>
-        </v-card-actions>
+        </v-card-actions> -->
       </v-card>
     </v-col>
   </v-row>

@@ -6,9 +6,9 @@
         <div class="navbar">
           <v-btn to="/">Home</v-btn> |
           <v-btn to="/about">Products</v-btn> |
-          <v-btn to="/services">Services</v-btn> |
-          <v-btn to="/contact-us">Contact US</v-btn> |
+          <v-btn to="/contact">Contact US</v-btn> |
           <v-btn to="/users">Users</v-btn> |
+          <v-btn to="/services">Login</v-btn> |
           <v-menu  offset-y class="custom-menu">
             <template v-slot:activator="{ props }">
               <v-btn icon v-bind="props" class="menu-icon">

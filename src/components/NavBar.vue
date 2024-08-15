@@ -2,13 +2,14 @@
     <v-app>
      <v-main>
       <v-app-bar color="primary">
-        <h4>Shop<span style="color:orange">Now</span></h4>
+        
+        <h4 class="ml-8">Shop<span style="color:orange;">Now</span></h4>
         <v-spacer></v-spacer>
         <div class="navbar">
           <v-btn to="/">Home</v-btn> |
           <v-btn to="/products">Products</v-btn> |
           <v-btn to="/services">Services</v-btn> |
-          <v-btn to="/contact-us">Contact US</v-btn> |
+          <v-btn to="/contact">Contact US</v-btn> |
           <v-btn to="/users">Users</v-btn> |
           <v-menu  offset-y class="custom-menu">
             <template v-slot:activator="{ props }">

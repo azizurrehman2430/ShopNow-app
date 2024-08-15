@@ -47,9 +47,9 @@
       links: [
         { name: "HomeView", route: "/", icon: "mdi-home" },
         { name: "Products", route: "/about", icon: "mdi-information" },
-        { name: "Services", route: "/services", icon: "mdi-newspaper-variant" },
+        { name: "Contact Us", route: "/contact", icon: "mdi-envelope " },
         { name: "Users", route: "/users", icon: "mdi-note-edit" },
-        { name: "Contact Us ", route: "/contact-us", icon: "mdi-chevron-right" },
+        { name: "Login", route: "/services", icon: "mdi-newspaper-variant" },
       ],
     }),
     watch: {
@@ -65,16 +65,16 @@
     text-decoration: none;
     } */
   .bar {
-    background:rgb(204, 246, 248);
+    background:rgb(252, 255, 255);
   }
   .routelinks {
   font-weight: bold;
   color: black;
   text-decoration:dashed; /* Remove underline */
   padding: 6px 20px; /* Add padding to make it look like a button */
-  border: 2px solid black; /* Add a border */
-  border-radius: 5%; /* Rounded corners */
-  background-color: rgb(251, 250, 250); /* Background color */
+  /* border: 2px solid black; Add a border */
+  border-radius: 15px; /* Rounded corners */
+  /* background-color: rgb(251, 250, 250); Background color */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition */
   /* display: inline-block; Make it inline-block to respect padding and margin */
 }

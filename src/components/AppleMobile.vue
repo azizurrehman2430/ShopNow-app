@@ -3,14 +3,14 @@
       <v-col cols="12" xs="12" sm="6" md="4" v-for="(Image, i) in Images" :key="i">
         <v-card class="mx-auto rounded-xl" max-width="300" :elevation="5" color="" flat outlined style="border: 1px solid black;">
           <div align="center" justify="center">
-            <v-img class="img mt-0" max-height="300" max-width="300" contain :src="Image.img"></v-img>
+            <v-img class="img mt-0" max-height="300" max-width="300" style="height: 100px;" contain :src="Image.img"></v-img>
           </div>
   
           <v-card-title class="title">{{ Image.title }}</v-card-title>
           <v-card-title class="grey--text text-grey-darken-1 caption mt-n2" id="subtitle">{{Image.subtitle}}</v-card-title>
           <v-card-title class="mt-n4" id="price">{{ Image.price }}</v-card-title>
   
-          <v-card-actions class="mx-16 mt-1" style="justify-content: center;">
+          <!-- <v-card-actions class="mx-16 mt-1" style="justify-content: center;">
             <v-btn outlined class="mt-n2 add small-btn bordered-btn" @click="decrement(Image)">
               <v-icon color="green">mdi-minus</v-icon>
             </v-btn>
@@ -18,7 +18,8 @@
             <v-btn outlined class="mt-n2 add small-btn bordered-btn" @click="increment(Image)">
               <v-icon color="green">mdi-plus</v-icon>
             </v-btn>
-          </v-card-actions>
+          </v-card-actions> -->
+          <v-btn class="mb-2" style="background-color: orange; border-radius: 15px;">BuyNow</v-btn>
         </v-card>
       </v-col>
     </v-row>

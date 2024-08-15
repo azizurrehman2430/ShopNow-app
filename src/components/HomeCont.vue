@@ -4,6 +4,7 @@
         <img :src="currentImage.src" alt="Big Image" class="big-image" />
         <div class="overlay">
           <div class="text-container">
+            <div>ShopNow</div>
             <div class="image-text">{{ currentImage.description }}</div>
             <button class="buy-now-btn">Buy Now</button>
           </div>
@@ -27,7 +28,7 @@
     data() {
       return {
         images: [
-          { src: 'H1.png', description: 'There you brought every branded mobile' },
+          { src: 'H1.png', description: 'ShopNow is a Best Place to Buy Branded Mobile Phone Of different Companies' },
           { src: 'H3.jpg', description: 'Description for image 2' },
           { src: 'H2.jpg', description: 'Description for image 3' },
         ],
@@ -99,13 +100,14 @@
   }
   
   .image-text {
-    color: white;
+    color:black;
     padding: 15px;
     border-radius: 5px;
     margin-left: 1rem;
     text-align: center;
     margin-top: 170px;
     width: 100%;
+    
   }
   
   .buy-now-btn {
