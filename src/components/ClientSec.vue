@@ -1,11 +1,11 @@
 <template>
-  <div class="image-swapper">
+  <div id="container" class="image-swapper">
     <div class="big-image-container">
       <img :src="currentImage.src" alt="Big Image" class="big-image" />
       <div class="overlay">
         <div class="text-container">
           <div class="image-text">{{ currentImage.description }}</div>
-          <button class="buy-now-btn">Buy Now</button>
+          <!-- <button class="buy-now-btn">Buy Now</button> -->
         </div>
         <div class="thumbnails-container">
           <div
@@ -27,9 +27,9 @@ export default {
   data() {
     return {
       images: [
-        { src: 'H1.png', description: 'There you brought every branded mobile' },
-        { src: 'H3.jpg', description: 'Description for image 2' },
-        { src: 'H2.jpg', description: 'Description for image 3' },
+        { src: 'H1.png', description: '' },
+        { src: 'H3.jpg', description: '' },
+        { src: 'H2.jpg', description: '' },
       ],
       currentIndex: 0,
     };
@@ -150,8 +150,11 @@ body {
 }
 
 @media (max-width: 600px) {
+  #container{
+    height: 50vh;
+  }
   .big-image-container {
-    height: 50%;
+    height: 100%;
   }
 
   .text-container {

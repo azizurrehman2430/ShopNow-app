@@ -1,20 +1,19 @@
 <template>
-    <div class="image-swapper">
+    <div id="container" class="image-swapper">
       <div class="big-image-container">
         <img :src="currentImage.src" alt="Big Image" class="big-image" />
         <div class="overlay">
           <div class="text-container">
-            <div>ShopNow</div>
+            <!-- <div>ShopNow</div> -->
             <div class="image-text">{{ currentImage.description }}</div>
-            <button class="buy-now-btn">Buy Now</button>
+            <!-- <button class="buy-now-btn">Buy Now</button> -->
           </div>
           <div class="thumbnails-container">
             <div
               v-for="(image, index) in images"
               :key="index"
               class="thumbnail"
-              @click="swapImages(index)"
-            >
+              @click="swapImages(index)">
               <img :src="image.src" alt="Thumbnail Image" class="small-image" />
             </div>
           </div>
@@ -28,9 +27,9 @@
     data() {
       return {
         images: [
-          { src: 'H1.png', description: 'ShopNow is a Best Place to Buy Branded Mobile Phone Of different Companies' },
-          { src: 'H3.jpg', description: 'Description for image 2' },
-          { src: 'H2.jpg', description: 'Description for image 3' },
+          { src: 'H1.png', description: '' },
+          { src: 'H3.jpg', description: '' },
+          { src: 'H2.jpg', description: '' },
         ],
         currentIndex: 0,
       };
@@ -151,10 +150,20 @@
     transform: scale(1.1);
   }
   
+  /* Responsive */
   @media (max-width: 600px) {
-    .big-image-container {
-      height: 50%;
-    }
+  #container{
+    height: 50vh;
+  }
+  .big-image-container {
+  height: 100%; /* Use full height */
+}
+
+.big-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
   
     .text-container {
       max-width: 90%;

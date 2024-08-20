@@ -1,7 +1,7 @@
 <template>
     <v-app>
      <v-main>
-      <v-app-bar color="primary">
+      <v-app-bar color="white">
         
         <h4 class="ml-8">Shop<span style="color:orange;">Now</span></h4>
         <v-spacer></v-spacer>

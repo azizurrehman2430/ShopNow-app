@@ -1,6 +1,6 @@
 <template>
     <v-app>
-      <v-app-bar class="bar" height="80px" flat color="primary">
+      <v-app-bar class="bar" height="80px" :elevation="4" flat color="rgb(0, 123, 137)">
         <strong><span class="ml-4">Shop</span><span style="color: orange">Now</span></strong>
         <v-spacer></v-spacer>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mr-4">
@@ -47,8 +47,8 @@
       links: [
         { name: "HomeView", route: "/", icon: "mdi-home" },
         { name: "Products", route: "/about", icon: "mdi-information" },
-        { name: "Contact Us", route: "/contact", icon: "mdi-envelope " },
-        { name: "Users", route: "/users", icon: "mdi-note-edit" },
+        { name: "Contact Us", route: "/contact", icon:"mdi-email"},
+        { name: "Users", route: "/users", icon:"mdi-account-circle" },
         { name: "Login", route: "/services", icon: "mdi-newspaper-variant" },
       ],
     }),

@@ -4,7 +4,7 @@
       <v-container fluid>
         <!-- <v-img src="H1.png" style=" width: 120%; height: 100%;"></v-img> -->
         <v-row>
-          <v-col>
+          <v-col cols="12" sm="12">
             <HomeCont/>
           </v-col>
         </v-row>
@@ -35,7 +35,7 @@
             </v-carousel> -->
           </v-col>
           <v-toolbar color="transparent" >
-            <v-toolbar-title><h3>Popular Mobiles Top Campanies </h3></v-toolbar-title>
+            <v-toolbar-title><h3 class="popular">Popular Mobiles Top Campanies </h3></v-toolbar-title>
 
             <!-- <v-spacer></v-spacer>
             <v-btn icon="mdi mdi-chevron-left"></v-btn>
@@ -135,6 +135,9 @@ export default {
 /* Responsive Styling */
 @media (max-width: 600px)
 {
+  .popular{
+    font-size:20px ;
+  }
 /* h3{
     margin-top: 200px;
   } */
